@@ -1,6 +1,4 @@
 <script setup>
-import {ref} from 'vue'
-
 defineProps({
   name: String,
   link:String,
@@ -8,8 +6,6 @@ defineProps({
   desc:String,
   ori_link:String
 })
-
-const count = ref(0)
 </script>
 
 <template>
