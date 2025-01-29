@@ -36,8 +36,7 @@ const count = ref(0)
         <p class="card-text">
           {{desc}}
         </p>
-        <p>
-          Ori:<a :href="ori_link">{{ori_link}}</a>
+        <p>受害者:<a :href="ori_link">{{ori_link}}</a>
         </p>
       </div>
     </div>
