@@ -7,16 +7,11 @@ let link = "https://raw.githubusercontent.com/northgreen/zyn-record/refs/heads/m
 
 let data = ref(null)
 let l = ref(null)
-const config = {
-  headers: {
-    'Cache-Control': 'no-cache',
-    'Pragma': 'no-cache',
-    'Expires': '0'
-  }
-};
+let headers = axios.defaults.headers
+headers.common["Cache-Control"] = "no-cache"
 const fetchData = async () => {
   try {
-    const response = await axios.get(link,config);
+    const response = await axios.get(link,headers);
     data.value = response.data.data;
     l.value = response.data.data.length;
   } catch (error) {
