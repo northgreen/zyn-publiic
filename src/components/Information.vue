@@ -40,7 +40,7 @@ onMounted(fetchData)
           性别：男<br/>
           出生日期：2008/06/22<br/>
           民族：汉<br/>
-          住址：山西省太原市小区店<br/>
+          住址：山西省太原市小店区<br/>
         </p>
         <img src="/src/assets/zyn.jpg" class="col-12 col-md-4 rounded float-end" alt="zyn"/>
       </div>
