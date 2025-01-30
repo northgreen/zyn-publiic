@@ -11,6 +11,7 @@ let l = ref(null)
 const fetchData = async () => {
   try {
     const response = await axios.get(link);
+
     data.value = response.data.data;
     l.value = response.data.data.length;
   } catch (error) {
@@ -48,7 +49,8 @@ onMounted(fetchData)
 
     <div class="clearfix"/>
     <p>
-      将会在此处列出所有由zyn创建的非法账户与对应的受害者：
+      将会在此处列出所有由zyn创建的非法账户与对应的受害者:<br/>
+      (你可以按下ctrl+shift+R清除缓存)
     </p>
 
     <div class="container">

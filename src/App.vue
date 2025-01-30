@@ -39,6 +39,10 @@ const data = {
     <p>
       此项目为了记录和公开在Twitter(X)上所有恶意注册的账号和这些人的恶行，同时对所有被冒仿的受害者表示同情以及对肇事者的声讨
     </p>
+    <p>
+      <a href="https://github.com/northgreen/zyn-publiic">项目地址</a>|
+      <a href="https://github.com/northgreen/zyn-record">记录仓库地址</a>
+    </p>
     <Information/>
     <Bottom/>
   </div>
