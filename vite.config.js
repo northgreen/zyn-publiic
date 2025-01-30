@@ -5,12 +5,6 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue()],
   server:{
-    proxy: {
-      '/api': {
-        target: 'https://raw.githubusercontent.com/northgreen/zyn-record/refs/heads/main/data/',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, '')
-      }
-    }
+    cors:true
   }
 })
