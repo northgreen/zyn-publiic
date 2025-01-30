@@ -7,11 +7,10 @@ let link = "https://raw.githubusercontent.com/northgreen/zyn-record/refs/heads/m
 
 let data = ref(null)
 let l = ref(null)
-let headers = axios.defaults.headers
-headers.common["Cache-Control"] = "max-age:30"
+
 const fetchData = async () => {
   try {
-    const response = await axios.get(link,headers);
+    const response = await axios.get(link);
     data.value = response.data.data;
     l.value = response.data.data.length;
   } catch (error) {
