@@ -3,12 +3,12 @@ import Card from "./Card.vue";
 import axios from "axios";
 import {onMounted, ref} from "vue";
 
-let link = "https://raw.githubusercontent.com/northgreen/zyn-record/refs/heads/main/data/data.json"
+let link = "/api/data.json"
 
 let data = ref(null)
 let l = ref(null)
 let headers = axios.defaults.headers
-headers.common["Cache-Control"] = "no-cache"
+headers.common["Cache-Control"] = "max-age:30"
 const fetchData = async () => {
   try {
     const response = await axios.get(link,headers);
