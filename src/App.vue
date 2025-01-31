@@ -1,22 +1,6 @@
 <script setup>
 import Information from "./components/Information.vue";
 import Bottom from "./components/Bottom.vue";
-
-
-const data = {
-  tittle: "张钰宁",
-  content: "多次冒充其他人，然后利用冒充账户四处辱骂，骚扰他人,屡教不改",
-  data: [
-    {
-      name: "test1",
-      desc: "1",
-      ref: "ref",
-      icon: "",
-      victim: "vi",
-      victim_ref: ""
-    }
-  ]
-}
 </script>
 
 <template>
@@ -40,8 +24,10 @@ const data = {
       此项目为了记录和公开在Twitter(X)上所有恶意注册的账号和这些人的恶行，同时对所有被冒仿的受害者表示同情以及对肇事者的声讨
     </p>
     <p>
+      <span class="fa fa-github"/>
       <a href="https://github.com/northgreen/zyn-publiic">项目地址</a>|
-      <a href="https://github.com/northgreen/zyn-record">记录仓库地址</a>
+      <a href="https://github.com/northgreen/zyn-record">记录仓库地址</a><br/>
+      <span class="fa fa-dot-circle-o"/><a href="https://github.com/northgreen/zyn-record/issues/new?template=temple.yaml">汇报一个新的ZYN账号</a>
     </p>
     <Information/>
     <Bottom/>
