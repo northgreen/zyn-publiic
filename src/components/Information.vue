@@ -12,8 +12,14 @@ const fetchData = async () => {
   try {
     const response = await axios.get(link);
 
-    data.value = response.data.data;
-    l.value = response.data.data.length;
+    if(typeof response.data === "string"){
+      data.value = JSON.parse(response.data)
+      console.log(data.value)
+      l.value = data.length
+    }else{
+      data.value = response.data.data;
+      l.value = response.data.data.length;
+    }
   } catch (error) {
     console.error('Error fetching data:', error);
   }
